@@ -20,7 +20,7 @@ p {
   background-color: White;
   border: 2px solid rgb(216, 2, 134);
   border-radius: 30px;
-  padding: 18px 36px;
+  padding: 12px 20px;
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
@@ -61,4 +61,84 @@ hr {
   background-color:#fff;
   height:1px;
   width:50%;
+}
+
+/* Pie Chart Styling */
+html, body{
+  height:100%;
+  text-align: center;
+  place-items: center;
+  background: white;
+}
+
+.circular{
+  height:100px;
+  width: 100px;
+  position: relative;  
+}
+
+.circular .inner{
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: white;
+  border-radius: 100%;
+}
+
+.circular .number{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  font-size:18px;
+  font-weight:500;
+  color:#4158d0;
+}
+
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: lightblue;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: #4158d0;
+}
+
+/* Animation Pie */
+.circle .left .progress{
+  z-index:1;
+  animation: left 4s linear both;
+}
+@keyframes left{
+  100%{
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  transform: rotate(180deg);
+  z-index:3;
+ 
+}
+.circle .right .progress{
+  animation: right 4s linear both;
+  animation-delay:4s;
+}
+@keyframes right{
+  100%{
+    transform: rotate(180deg);
+  }
 }

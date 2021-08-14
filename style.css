@@ -5,7 +5,9 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
-
+.goal-row {
+  margin-bottom: 50px;
+}
 .button_slide {
   color: black;
   background-color: White;

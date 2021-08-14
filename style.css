@@ -1,7 +1,6 @@
 /* Global Font Styling */
 html *
 {
-   color: #000 !important;
    font-family: Arial !important;
 }
 
@@ -14,6 +13,9 @@ p {
 }
 .goal-row {
   margin-bottom: 50px;
+}
+.chart-row {
+  margin: 5%;
 }
 .button_slide {
   color: black;
@@ -104,7 +106,7 @@ html, body{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: lightblue;
+  background: lightgray;
   -webkit-border-radius: 100%;
   clip: rect(0px, 100px, 100px, 50px);
 }

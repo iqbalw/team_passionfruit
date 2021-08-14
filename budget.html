@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
 
 </head>
@@ -32,11 +32,22 @@
           <input type="number" id="aligned-other"/>
         </div>
         <div class="pure-controls">
-          <button type="submit" class="pure-button pure-button-primary">
+          <button type="submit" class="pure-button pure-button-primary" onclick="getForm()">
             OK
           </button>
         </div>
       </fieldset>
     </form>
   </div>
+
+  <script>
+    function getForm() {
+      const rent = document.getElementById("aligned-rent").value;
+      const groceries = document.getElementById("aligned-groceries").value;
+      const utilities = document.getElementById("aligned-utilities").value;
+      const transport = document.getElementById("aligned-transport").value;
+      const other = document.getElementById("aligned-other").value;
+      console.log(rent + " " + groceries + " " + utilities + " " + transport + " " + other);
+    }
+  </script>
 </body>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -8,6 +10,20 @@
 
   <!-- Container 1 -->
   <div class="container">
+    <nav class="navigation">
+      <button id="menu-button" class="menu-button">Menu</button>
+      <ul id="menu" class="slide-menu">
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Set budget</a>
+        </li>
+        <li>
+          <a href="#">Set goal</a>
+        </li>
+      </ul>
+    </nav>
     <div class="row nav-row">
       <h1>
         Dashboard
@@ -65,27 +81,29 @@
       </div>
     </div>
 
-  </div>
 
-  <!-- Dotted line separator -->
-  <hr>
 
-  <!-- Container 1 -->
-  <div class="container2">
+    <!-- Dotted line separator -->
+    <hr>
 
-    <div class="expenses row">
-      <h1>Expenses</h1>
-      <h4>Max $</h4>
-    </div>
+    <!-- Container 1 -->
+    <div class="container2">
 
-    <!-- This is where our expenses chart is shown -->
-    <div class="row expenses-row">
-      <div class="">
-        Expenses chart placeholder
+      <div class="expenses row">
+        <h1>Expenses</h1>
+        <h4>Max $</h4>
       </div>
+
+      <!-- This is where our expenses chart is shown -->
+      <div class="row expenses-row">
+        <div class="">
+          Expenses chart placeholder
+        </div>
+      </div>
+
     </div>
 
-  </div>
+    <script src="dashboard.js"></script>
 </body>
 
 </HTML>

@@ -5,9 +5,9 @@ html *
 }
 
 p {
-  color:red;
+  color: red;
 }
-.row{
+.row {
   display: flex;
   justify-content: space-evenly;
 }
@@ -24,30 +24,30 @@ p {
   border-radius: 30px;
   padding: 12px 20px;
   display: inline-block;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: 'Lucida Console', Monaco, monospace;
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
+  box-shadow: inset 0 0 0 0 #d80286;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
 .slide_down:hover {
-  box-shadow: inset 0 100px 0 0 #D80286;
+  box-shadow: inset 0 100px 0 0 #d80286;
 }
 
 .slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #D80286;
+  box-shadow: inset 400px 0 0 0 #d80286;
 }
 
 .slide_left:hover {
-  box-shadow: inset 0 0 0 50px #D80286;
+  box-shadow: inset 0 0 0 50px #d80286;
 }
 
 .slide_diagonal:hover {
-  box-shadow: inset 400px 50px 0 0 #D80286;
+  box-shadow: inset 400px 50px 0 0 #d80286;
 }
 
 #outer {
@@ -57,12 +57,12 @@ p {
 }
 hr {
   margin-top: 20px;
-  border:none;
-  border-top:1px dashed black;
-  color:#fff;
-  background-color:#fff;
-  height:1px;
-  width:50%;
+  border: none;
+  border-top: 1px dashed black;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 50%;
 }
 
 /* Pie Chart Styling */
@@ -144,3 +144,45 @@ html, body{
     transform: rotate(180deg);
   }
 }
+.container {
+  max-width: 414px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.slide-menu {
+  visibility: hidden;
+  background-color: aqua;
+  width: 33vw;
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
+    visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.isShown {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.navigation {
+  position: absolute;
+}
+
+.menu-button {
+  margin-top: 43px;
+}
+
+.budget-form{
+  margin: auto;
+  padding: 10px;
+
+}
+
+.pure-control-group{
+  padding: 10px;
+  margin: auto;
+  
+}
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <button id="menu-button">Menu</button>
+        <ul id="menu" class="slide-menu">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Set budget</a>
+            </li>
+            <li>
+                <a href="#">Set goal</a>
+            </li>
+        </ul>
+    </nav>
+        
+            
+  <div class="column"><h1>Prac Navigation</h1></div>
+  
+  <script>
+      
+      const menuButton = document.getElementById("menu-button")
+      const menuList = document.getElementById("menu")
+      
+      function toggleMenu(){
+        menuList.classList.toggle("isShown")
+      }
+      menuButton.addEventListener("click", toggleMenu)
+      
+  </script>
+
+  <style>
+
+
+.column {
+    display: table-cell;
+}
+
+  .slide-menu{
+          visibility: hidden;
+          background-color: aqua;
+          width: 33vw;
+          transform: translateX(-100%);
+          transition: transform .5s  cubic-bezier(0.645, 0.045, 0.355, 1),visibility .5s  cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      .isShown{
+          visibility: visible;
+          transform: translateX(0);
+      }
+
+      .navigation{
+          position:absolute;
+      }
+    
+  </style>
+  
+</body>
+
+</HTML>

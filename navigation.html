@@ -5,23 +5,24 @@
 </head>
 
 <body>
-  <h1>
-Prac Navigation  </h1>
-  <nav class="navigation">
-    <button id="menu-button">Menu</button>
-    <ul id="menu" class="slide-menu">
-        <li>
-            <a href="#">Dashboard</a>
-        </li>
-        <li>
-            <a href="#">Set budget</a>
-        </li>
-        <li>
-            <a href="#">Set goal</a>
-        </li>
-    </ul>
-  </nav>
-
+    <nav class="navigation">
+        <button id="menu-button">Menu</button>
+        <ul id="menu" class="slide-menu">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Set budget</a>
+            </li>
+            <li>
+                <a href="#">Set goal</a>
+            </li>
+        </ul>
+    </nav>
+        
+            
+  <div class="column"><h1>Prac Navigation</h1></div>
+  
   <script>
       
       const menuButton = document.getElementById("menu-button")
@@ -35,6 +36,12 @@ Prac Navigation  </h1>
   </script>
 
   <style>
+
+
+.column {
+    display: table-cell;
+}
+
   .slide-menu{
           visibility: hidden;
           background-color: aqua;
@@ -48,6 +55,9 @@ Prac Navigation  </h1>
           transform: translateX(0);
       }
 
+      .navigation{
+          position:absolute;
+      }
     
   </style>
   

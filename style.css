@@ -62,3 +62,17 @@ hr {
   height:1px;
   width:50%;
 }
+
+.budget-form{
+  margin: auto;
+  padding: 10px;
+
+}
+
+.pure-control-group{
+  padding: 10px;
+  margin: auto;
+  
+}
+
+

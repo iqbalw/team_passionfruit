@@ -17,12 +17,29 @@ regionIds = {
 }
 */
 
+const median = (values) => {
+  if(values.length ===0) return 0;
+
+  values.sort(function(a,b){
+    return a-b;
+  });
+
+  var half = Math.floor(values.length / 2);
+
+  if (values.length % 2)
+    return values[half];
+
+  return (values[half - 1] + values[half]) / 2.0;
+}
+
 const fetchData = async (region) => {
 
   let url = "https://api.tmsandbox.co.nz/v1/Search/Property/Residential.json?";
 
+  url.concat("rows=1");
+
   if (region) {
-    url.concat("region=" + region);
+    url.concat("&region=" + region);
   }
 
   const response = await fetch(
@@ -36,7 +53,23 @@ const fetchData = async (region) => {
 
   const data = await response.json();
 
-  console.log(data);
+  //DEBUG
+  // console.log(data);
+
+  return data.List;
 };
 
-fetchData();
+const getMedianPrice = async () => {
+
+  // let region = document.getElementById("select").value;
+  const regionData = await fetchData(15);
+
+  const property = regionData[1];
+  const askingPrice = property.PriceDisplay.substr(15);
+  const price = parseFloat(askingPrice.replace(/,/g, ''));
+
+  return price;
+}
+
+//DEBUG
+getMedianPrice();

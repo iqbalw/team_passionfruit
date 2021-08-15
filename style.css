@@ -262,6 +262,30 @@ fieldset {
   justify-content: space-between;
 }
 
+/* Expense bar */
+#myProgress {
+  width: 50%;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #04AA6D;
+  border-radius: 20px;
+}
+
+.expense-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.expense-desc {
+  width: 80px;
+}
+
 /* 
 .budget-form{
   height: 100vh;

@@ -1,25 +1,64 @@
 /* Global Font Styling */
-html * {
-  color: #000 !important;
-  font-family: Arial !important;
+html *
+{
+   font-family: Arial !important;
 }
 
 p {
-  color: red;
+  padding-left: 10px;
+}
+
+.region{
+  font-size: 20px;
+  width: 75px;
+  height: 24px;
+}
+
+/* Select Drop Down Menu */
+select {
+  display:inline-block;
+  size: 26px;
+  width: 300px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+
 }
 .row {
   display: flex;
   justify-content: space-evenly;
 }
 .goal-row {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.goal-button{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.money-save{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.income-form{
+  font-size: 25px;
+}
+
+.chart-row {
+  margin: 5%;
 }
 .button_slide {
   color: black;
   background-color: White;
   border: 2px solid rgb(216, 2, 134);
   border-radius: 30px;
-  padding: 18px 36px;
+  padding: 12px 20px;
   display: inline-block;
   font-family: 'Lucida Console', Monaco, monospace;
   font-size: 14px;
@@ -47,11 +86,18 @@ p {
   box-shadow: inset 400px 50px 0 0 #d80286;
 }
 
+.budget-ok{
+  display: flex;
+  justify-content: center;
+  margin-top:10px;
+}
+
 #outer {
   width: 364px;
   margin: 50px auto 0 auto;
   text-align: center;
 }
+
 hr {
   margin-top: 20px;
   border: none;
@@ -59,11 +105,91 @@ hr {
   color: #fff;
   background-color: #fff;
   height: 1px;
-  width: 50%;
+  width: 90vw;
 }
 
+/* Pie Chart Styling */
+html, body{
+  height:100%;
+  text-align: center;
+  place-items: center;
+  background: white;
+}
+
+.circular{
+  height:100px;
+  width: 100px;
+  position: relative;  
+}
+
+.circular .inner{
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: white;
+  border-radius: 100%;
+}
+
+.circular .number{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  font-size:18px;
+  font-weight:500;
+  color:#4158d0;
+}
+
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: lightgray;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: #4158d0;
+}
+
+/* Animation Pie */
+.circle .left .progress{
+  z-index:1;
+  animation: left 4s linear both;
+}
+@keyframes left{
+  100%{
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  transform: rotate(180deg);
+  z-index:3;
+ 
+}
+.circle .right .progress{
+  animation: right 4s linear both;
+  animation-delay:4s;
+}
+@keyframes right{
+  100%{
+    transform: rotate(180deg);
+  }
+}
 .container {
   max-width: 414px;
+  /* max-width: 100%; */
   position: relative;
   margin: 0 auto;
 }
@@ -71,8 +197,9 @@ hr {
 /* Navigation */
 .slide-menu {
   visibility: hidden;
-  background-color: aqua;
+  background-color: #f5f6f9;
   width: 33vw;
+  height: 100%;
   transform: translateX(-100%);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
     visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -81,6 +208,7 @@ hr {
 .isShown {
   visibility: visible;
   transform: translateX(0);
+  height: 100%;
 }
 
 .navigation {
@@ -88,19 +216,56 @@ hr {
 }
 
 .menu-button {
-  margin-top: 43px;
+  margin-top: 34px;
+  background-color: transparent;
+  border: none;
+}
+
+#menu-container {
+  height: 100vw;
+}
+
+#menu {
+  list-style-type: none;
+}
+
+.menu-item {
+  padding-top: 25px;
+}
+
+.menu-item a {
+  text-decoration: none;
 }
 
 .budget-form{
   margin: auto;
   padding: 10px;
+  font-size: 20px;
+}
+
+.location-select{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+
+}
+
+/* Budget Form */
+
+fieldset {
+  border: 0;
+  padding: 0;
 
 }
 
 .pure-control-group{
   padding: 10px;
   margin: auto;
-  
+  display: flex;
+  justify-content: space-between;
 }
 
-
+/* 
+.budget-form{
+  height: 100vh;
+} */

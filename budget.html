@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
+    <div class="row nav-row">
+        <h1>Create Budget</h1>
+    </div>
+
+    <div class="budget-form">
+        <form class="pure-form pure-form-aligned">
+          <fieldset>
+            <div class="pure-control-group income-form">
+              <label for="aligned-income">Income</label>
+              <input type="number" id="aligned-income" />
+            </div>
+        </form>
+      </div>
+    <hr>
+    <div class="row nav-row">
+        <div class="money-save">
+          Money Left To Save: $200
+        </div>
+      </div>
+    <hr>
   <div class="budget-form">
     <form class="pure-form pure-form-aligned">
       <fieldset>
@@ -17,24 +36,22 @@
         </div>
         <div class="pure-control-group">
           <label for="aligned-groceries">Groceries</label>
-          <input type="number" id="aligned-groceries"/>
+          <input type="number" id="aligned-groceries" />
         </div>
         <div class="pure-control-group">
           <label for="aligned-utilities">Utilities</label>
-          <input type="number" id="aligned-utilities"/>
+          <input type="number" id="aligned-utilities" />
         </div>
         <div class="pure-control-group">
           <label for="aligned-transport">Transport</label>
-          <input type="number" id="aligned-transport"/>
+          <input type="number" id="aligned-transport" />
         </div>
         <div class="pure-control-group">
           <label for="aligned-other">Other</label>
-          <input type="number" id="aligned-other"/>
+          <input type="number" id="aligned-other" />
         </div>
-        <div class="pure-controls">
-          <button type="submit" class="pure-button pure-button-primary" onclick="getForm()">
-            OK
-          </button>
+        <div class="pure-controls budget-ok">
+          <button type="button" class="button_slide slide_down">OK</button>
         </div>
       </fieldset>
     </form>
@@ -47,7 +64,9 @@
       const utilities = document.getElementById("aligned-utilities").value;
       const transport = document.getElementById("aligned-transport").value;
       const other = document.getElementById("aligned-other").value;
-      console.log(rent + " " + groceries + " " + utilities + " " + transport + " " + other);
+      console.log(
+        rent + " " + groceries + " " + utilities + " " + transport + " " + other
+      );
     }
   </script>
 </body>

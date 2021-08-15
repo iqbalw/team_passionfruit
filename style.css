@@ -219,7 +219,9 @@ body {
 }
 
 #menu-container {
-  height: 100vw;
+  height: 50vw;
+  z-index: 1;
+  position: absolute;
 }
 
 #menu {

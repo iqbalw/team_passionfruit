@@ -5,51 +5,15 @@ html *
 }
 
 p {
-  padding-left: 10px;
-}
-
-.region{
-  font-size: 20px;
-  width: 75px;
-  height: 24px;
-}
-
-/* Select Drop Down Menu */
-select {
-  display:inline-block;
-  size: 26px;
-  width: 300px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-
+  color: red;
 }
 .row {
   display: flex;
   justify-content: space-evenly;
 }
 .goal-row {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
-
-.goal-button{
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  margin-top: 50px;
-}
-
-.money-save{
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.income-form{
-  font-size: 25px;
-}
-
 .chart-row {
   margin: 5%;
 }
@@ -86,18 +50,11 @@ h2 {
   box-shadow: inset 400px 50px 0 0 #d80286;
 }
 
-.budget-ok{
-  display: flex;
-  justify-content: center;
-  margin-top:10px;
-}
-
 #outer {
   width: 364px;
   margin: 50px auto 0 auto;
   text-align: center;
 }
-
 hr {
   margin-top: 20px;
   border: none;
@@ -105,7 +62,7 @@ hr {
   color: #fff;
   background-color: #fff;
   height: 1px;
-  width: 90vw;
+  width: 50%;
 }
 
 /* Pie Chart Styling */
@@ -189,14 +146,16 @@ html, body{
 }
 .container {
   max-width: 414px;
-  /* max-width: 100%; */
   position: relative;
   margin: 0 auto;
 }
 
 /* Progress Bar */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+}
 #myProgress {
-  margin-left: 5%;
   width: 100%;
   background-color: #ddd;
   border-radius: 20px;
@@ -209,12 +168,12 @@ html, body{
   border-radius: 20px;
 }
 
+
 /* Navigation */
 .slide-menu {
   visibility: hidden;
-  background-color: #f5f6f9;
+  background-color: aqua;
   width: 33vw;
-  height: 100%;
   transform: translateX(-100%);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
     visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -223,7 +182,6 @@ html, body{
 .isShown {
   visibility: visible;
   transform: translateX(0);
-  height: 100%;
 }
 
 .navigation {
@@ -231,56 +189,19 @@ html, body{
 }
 
 .menu-button {
-  margin-top: 34px;
-  background-color: transparent;
-  border: none;
-}
-
-#menu-container {
-  height: 100vw;
-}
-
-#menu {
-  list-style-type: none;
-}
-
-.menu-item {
-  padding-top: 25px;
-}
-
-.menu-item a {
-  text-decoration: none;
+  margin-top: 43px;
 }
 
 .budget-form{
   margin: auto;
   padding: 10px;
-  font-size: 20px;
-}
-
-.location-select{
-  display: flex;
-  justify-content: space-between;
-  border-radius: 30px;
-
-}
-
-/* Budget Form */
-
-fieldset {
-  border: 0;
-  padding: 0;
 
 }
 
 .pure-control-group{
   padding: 10px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  
 }
 
-/* 
-.budget-form{
-  height: 100vh;
-} */
+

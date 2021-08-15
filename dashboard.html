@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,17 +16,17 @@
       <div id="menu-container">
         <ul id="menu" class="slide-menu">
           <li class="menu-item">
-              <a href="dashboard.html">Dashboard</a>
+            <a href="dashboard.html">Dashboard</a>
           </li>
           <li class="menu-item">
-              <a href="goal.html">Set New Goal</a>
+            <a href="goal.html">Set New Goal</a>
           </li>
           <li class="menu-item">
-              <a href="budget.html">Create Budget</a>
+            <a href="budget.html">Create Budget</a>
           </li>
-      </ul>
-    </div>
-  </nav>
+        </ul>
+      </div>
+    </nav>
 
     <div class="row nav-row">
       <h1>
@@ -81,7 +81,7 @@
         <A HREF="budget.html"><button type="button" class="button_slide slide_down">Add Expense</button></A>
       </div>
       <div class="">
-        <A HREF = "goal.html"><button type="button" class="button_slide slide_down">Set New Goal</button></A>
+        <A HREF="goal.html"><button type="button" class="button_slide slide_down">Set New Goal</button></A>
       </div>
     </div>
 
@@ -99,15 +99,61 @@
       </div>
 
       <!-- This is where our expenses chart is shown -->
-      <div class="row expenses-row">
-        <div class="">
-          Expenses chart placeholder
+      <div class="expense-item">
+        <div class="expense-desc">
+          Rent
+        </div>
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+        <div class="expense-price">
+          $350
         </div>
       </div>
 
+      <div class="expense-item">
+        <div class="expense-desc">
+          Groceries
+        </div>
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+        <div class="expense-price">
+          $180
+        </div>
+      </div>
+
+      <div class="expense-item">
+        <div class="expense-desc">
+          Utilities
+        </div>
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+        <div class="expense-price">
+          $90
+        </div>
+      </div>
+
+      <div class="expense-item">
+        <div class="expense-desc">
+          Transport
+        </div>
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+        <div class="expense-price">
+          $250
+        </div>
+      </div>
+
+
+      <script src="scripts/progressBar.js"></script>
     </div>
 
-    <script src="dashboard.js"></script>
+  </div>
+
+  <script src="dashboard.js"></script>
 </body>
 
 </HTML>

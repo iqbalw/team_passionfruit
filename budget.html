@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
-  <form class="pure-form pure-form-aligned">
-    <fieldset>
+  <div class="budget-form">
+    <form class="pure-form pure-form-aligned">
+      <fieldset>
         <div class="pure-control-group">
-            <label for="aligned-name">Rent</label>
-            <input type="number" id="aligned-name"/>
+          <label for="aligned-rent">Rent</label>
+          <input type="number" id="aligned-rent" />
         </div>
         <div class="pure-control-group">
-            <label for="aligned-password">Groceries</label>
-            <input type="number"/>
+          <label for="aligned-groceries">Groceries</label>
+          <input type="number" id="aligned-groceries"/>
         </div>
         <div class="pure-control-group">
-            <label for="aligned-email">Utilities</label>
-            <input type="number"/>
+          <label for="aligned-utilities">Utilities</label>
+          <input type="number" id="aligned-utilities"/>
         </div>
         <div class="pure-control-group">
-            <label for="aligned-foo">Transport</label>
-            <input type="number" />
+          <label for="aligned-transport">Transport</label>
+          <input type="number" id="aligned-transport"/>
         </div>
         <div class="pure-control-group">
-          <label for="aligned-foo">Other</label>
-          <input type="number"/>
+          <label for="aligned-other">Other</label>
+          <input type="number" id="aligned-other"/>
         </div>
         <div class="pure-controls">
-            <button type="submit" class="pure-button pure-button-primary">OK</button>
+          <button type="submit" class="pure-button pure-button-primary" onclick="getForm()">
+            OK
+          </button>
         </div>
-    </fieldset>
-</form>
+      </fieldset>
+    </form>
+  </div>
+
+  <script>
+    function getForm() {
+      const rent = document.getElementById("aligned-rent").value;
+      const groceries = document.getElementById("aligned-groceries").value;
+      const utilities = document.getElementById("aligned-utilities").value;
+      const transport = document.getElementById("aligned-transport").value;
+      const other = document.getElementById("aligned-other").value;
+      console.log(rent + " " + groceries + " " + utilities + " " + transport + " " + other);
+    }
+  </script>
 </body>

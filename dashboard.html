@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
+
   <!-- Container 1 -->
   <div class="container">
     <nav class="navigation">
@@ -27,6 +27,7 @@
       </ul>
     </div>
   </nav>
+
     <div class="row nav-row">
       <h1>
         Dashboard
@@ -37,7 +38,7 @@
     <div id="goal-title">
       <div class="row goal-row">
         <div id="item1">
-          <strong> Goal: $100 </strong>
+          <strong> Goal: $2000 </strong>
         </div>
         <div class="row days-left-row">
           72 days left
@@ -47,41 +48,66 @@
 
     <!-- This is where the goal chart is shown -->
     <div class="row chart-row">
-      <div class="">
-        Pie chart placeholder
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="number">100%</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Animates the progress bar number as it is incremented -->
+    <script type="text/javascript">
+      const numb = document.querySelector(".number");
+      let counter = 0;
+      setInterval(() => {
+        if (counter == 100) {
+          clearInterval();
+        } else {
+          counter += 1;
+          numb.textContent = counter + "%";
+        }
+      }, 80);
+    </script>
+
     <div class="row buttons-row">
       <div class="">
-        <A HREF = "budget.html"><button type="button" class="button_slide slide_down">Add Expense</button></A>
+        <A HREF="budget.html"><button type="button" class="button_slide slide_down">Add Expense</button></A>
       </div>
       <div class="">
         <button type="button" class="button_slide slide_down">Set New Goal</button>
       </div>
     </div>
 
-  
 
 
     <!-- Dotted line separator -->
     <hr>
 
-    <!-- This is where our buttons (Add Expenses & Create Budget) is shown -->
-    <div class="expenses row">
-      <h1>Expenses</h1>
-      <h4>Max $</h4>
-    </div>
+    <!-- Container 1 -->
+    <div class="container2">
 
-    <!-- This is where our expenses chart is shown -->
-    <div class="row expenses-row">
-      <div class="">
-        Expenses chart placeholder
+      <div class="expenses row">
+        <h1>Expenses</h1>
+        <h4>Max $</h4>
       </div>
+
+      <!-- This is where our expenses chart is shown -->
+      <div class="row expenses-row">
+        <div class="">
+          Expenses chart placeholder
+        </div>
+      </div>
+
     </div>
 
-  </div>
-
-  <script src="dashboard.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 
 </HTML>

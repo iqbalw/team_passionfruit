@@ -286,6 +286,12 @@ fieldset {
   width: 80px;
 }
 
+.expenses-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /* 
 .budget-form{
   height: 100vh;

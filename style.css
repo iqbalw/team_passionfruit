@@ -1,18 +1,52 @@
 /* Global Font Styling */
-html *
-{
-   font-family: Arial !important;
+html * {
+  font-family: Arial !important;
 }
 
 p {
   color: red;
+  padding-left: 10px;
+}
+
+.region {
+  font-size: 20px;
+  width: 75px;
+  height: 24px;
+}
+
+/* Select Drop Down Menu */
+select {
+  display: inline-block;
+  size: 26px;
+  width: 300px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 .row {
   display: flex;
   justify-content: space-evenly;
 }
 .goal-row {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.goal-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.money-save {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.income-form {
+  font-size: 25px;
 }
 .chart-row {
   margin: 5%;
@@ -50,6 +84,12 @@ p {
   box-shadow: inset 400px 50px 0 0 #d80286;
 }
 
+.budget-ok {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 #outer {
   width: 364px;
   margin: 50px auto 0 auto;
@@ -66,20 +106,21 @@ hr {
 }
 
 /* Pie Chart Styling */
-html, body{
-  height:100%;
-  text-align: center;
+html,
+body {
+  height: 100%;
   place-items: center;
   background: white;
 }
 
-.circular{
-  height:100px;
+.circular {
+  z-index: 0;
+  height: 100px;
   width: 100px;
-  position: relative; 
+  position: relative;
 }
 
-.circular .inner{
+.circular .inner {
   position: absolute;
   z-index: 6;
   top: 50%;
@@ -91,18 +132,18 @@ html, body{
   border-radius: 100%;
 }
 
-.circular .number{
+.circular .number {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index:10;
-  font-size:18px;
-  font-weight:500;
-  color:#4158d0;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4158d0;
 }
 
-.circular .bar{
+.circular .bar {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -111,7 +152,7 @@ html, body{
   clip: rect(0px, 100px, 100px, 50px);
 }
 
-.circle .bar .progress{
+.circle .bar .progress {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -121,31 +162,30 @@ html, body{
 }
 
 /* Animation Pie */
-.circle .left .progress{
-  z-index:1;
+.circle .left .progress {
+  z-index: 1;
   animation: left 4s linear both;
 }
-@keyframes left{
-  100%{
+@keyframes left {
+  100% {
     transform: rotate(180deg);
   }
 }
 .circle .right {
   transform: rotate(180deg);
-  z-index:3;
- 
+  z-index: 3;
 }
-.circle .right .progress{
+.circle .right .progress {
   animation: right 4s linear both;
-  animation-delay:4s;
+  animation-delay: 4s;
 }
-@keyframes right{
-  100%{
+@keyframes right {
+  100% {
     transform: rotate(180deg);
   }
 }
 .container {
-  max-width: 414px;
+  max-width: 100%;
   position: relative;
   margin: 0 auto;
 }
@@ -189,19 +229,55 @@ html, body{
 }
 
 .menu-button {
-  margin-top: 43px;
+  margin-top: 34px;
+  background-color: transparent;
+  border: none;
 }
 
-.budget-form{
+#menu-container {
+  height: 50vw;
+  z-index: 1;
+  position: absolute;
+}
+
+#menu {
+  list-style-type: none;
+}
+
+.menu-item {
+  padding-top: 25px;
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+
+.budget-form {
   margin: auto;
   padding: 10px;
-
+  font-size: 20px;
 }
 
-.pure-control-group{
+.location-select {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+/* Budget Form */
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.pure-control-group {
   padding: 10px;
   margin: auto;
   
 }
 
-
+/* 
+.budget-form{
+  height: 100vh;
+} */

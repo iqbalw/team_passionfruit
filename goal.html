@@ -50,24 +50,21 @@
   <!--Possible API Location-->
   <div class="location-select">
     <div class="region"> Region: </div>
-      <select>
-        <option value="0"></option>
-        <option value="1">Audi</option>
-        <option value="2">BMW</option>
-        <option value="3">Citroen</option>
-        <option value="4">Ford</option>
-        <option value="5">Honda</option>
-        <option value="6">Jaguar</option>
-        <option value="7">Land Rover</option>
-        <option value="8">Mercedes</option>
-        <option value="9">Mini</option>
-        <option value="10">Nissan</option>
-        <option value="11">Toyota</option>
-        <option value="12">Volvo</option>
+      <select id="region-select">
+        <option value="15">Northland</option>
+        <option value="15">Auckland</option>
+        <option value="15">Bay of Plenty</option>
+        <option value="15">Waikato</option>
+        <option value="15">Taranaki</option>
+        <option value="15">Wellington</option>
       </select>
   </div>
 
   <div class="goal-button">
-   <button type="button" class="button_slide slide_down">OK</button>
+   <button type="button" class="button_slide slide_down" onclick="getMedianPrice()">OK</button>
   </div>
+
+  <p id="goal-price"></p>
+
+  <script src="scripts/api.js"></script>
 </body>

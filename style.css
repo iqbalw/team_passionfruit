@@ -5,7 +5,26 @@ html * {
 }
 
 p {
-  color: red;
+  padding-left: 10px;
+}
+
+.region{
+  font-size: 20px;
+  width: 75px;
+  height: 24px;
+}
+
+/* Select Drop Down Menu */
+select {
+  display:inline-block;
+  size: 26px;
+  width: 300px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+
 }
 .row {
   display: flex;
@@ -97,10 +116,28 @@ hr {
 
 }
 
+.location-select{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* Budget Form */
+
+fieldset {
+  border: 0;
+  padding: 0;
+
+}
+
 .pure-control-group{
   padding: 10px;
   margin: auto;
-  
+  display: flex;
+  justify-content: space-between;
 }
 
-
+/* 
+.budget-form{
+  height: 100vh;
+} */

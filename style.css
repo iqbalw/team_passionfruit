@@ -31,8 +31,25 @@ h2 {
   justify-content: space-evenly;
 }
 .goal-row {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
+
+.goal-button{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.money-save{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.income-form{
+  font-size: 25px;
+}
+
 .button_slide {
   color: black;
   background-color: White;
@@ -66,11 +83,18 @@ h2 {
   box-shadow: inset 400px 50px 0 0 #d80286;
 }
 
+.budget-ok{
+  display: flex;
+  justify-content: center;
+  margin-top:10px;
+}
+
 #outer {
   width: 364px;
   margin: 50px auto 0 auto;
   text-align: center;
 }
+
 hr {
   margin-top: 20px;
   border: none;
@@ -78,7 +102,7 @@ hr {
   color: #fff;
   background-color: #fff;
   height: 1px;
-  width: 50%;
+  width: 90vw;
 }
 
 .container {
@@ -113,12 +137,13 @@ hr {
 .budget-form{
   margin: auto;
   padding: 10px;
-
+  font-size: 20px;
 }
 
 .location-select{
   display: flex;
   justify-content: space-between;
+  border-radius: 30px;
 
 }
 

@@ -76,7 +76,7 @@ html, body{
 .circular{
   height:100px;
   width: 100px;
-  position: relative;  
+  position: relative; 
 }
 
 .circular .inner{
@@ -148,6 +148,21 @@ html, body{
   max-width: 414px;
   position: relative;
   margin: 0 auto;
+}
+
+/* Progress Bar */
+#myProgress {
+  margin-left: 5%;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+#myBar {
+  width: 20%;
+  height: 30px;
+  background-color: #04AA6D;
+  border-radius: 20px;
 }
 
 /* Navigation */

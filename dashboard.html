@@ -46,7 +46,7 @@
     <div class="row chart-row">
       <div class="circular">
         <div class="inner"></div>
-        <div class="number">100%</div>
+        <div class="number">100% Saved</div>
         <div class="circle">
           <div class="bar left">
             <div class="progress"></div>
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <!-- Animates the progress bar number as it is incremented -->
+    <!-- Animates the circular progress bar number as it is incremented -->
     <script type="text/javascript">
       const numb = document.querySelector(".number");
       let counter = 0;
@@ -96,13 +96,16 @@
 
       <!-- This is where our expenses chart is shown -->
       <div class="row expenses-row">
-        <div class="">
-          Expenses chart placeholder
+        Rent
+        <div id="myProgress">
+          <div id="myBar"></div>
         </div>
       </div>
+      <button onclick="move()">Click Me</button>
 
     </div>
 
+    <script src="scripts/progressBar.js"></script
     <script src="dashboard.js"></script>
 </body>
 

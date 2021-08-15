@@ -64,6 +64,7 @@ hr {
 
 .container {
   max-width: 414px;
+  /* max-width: 100%; */
   position: relative;
   margin: 0 auto;
 }
@@ -71,8 +72,9 @@ hr {
 /* Navigation */
 .slide-menu {
   visibility: hidden;
-  background-color: aqua;
+  background-color: #f5f6f9;
   width: 33vw;
+  height: 100%;
   transform: translateX(-100%);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
     visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -81,6 +83,7 @@ hr {
 .isShown {
   visibility: visible;
   transform: translateX(0);
+  height: 100%;
 }
 
 .navigation {
@@ -88,5 +91,23 @@ hr {
 }
 
 .menu-button {
-  margin-top: 43px;
+  margin-top: 34px;
+  background-color: transparent;
+  border: none;
+}
+
+#menu-container {
+  height: 100vw;
+}
+
+#menu {
+  list-style-type: none;
+}
+
+.menu-item {
+  padding-top: 25px;
+}
+
+.menu-item a {
+  text-decoration: none;
 }

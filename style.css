@@ -1,7 +1,6 @@
 /* Global Font Styling */
-html *
-{
-   font-family: Arial !important;
+html * {
+  font-family: Arial !important;
 }
 
 p {
@@ -66,20 +65,21 @@ hr {
 }
 
 /* Pie Chart Styling */
-html, body{
-  height:100%;
-  text-align: center;
+html,
+body {
+  height: 100%;
   place-items: center;
   background: white;
 }
 
-.circular{
-  height:100px;
+.circular {
+  z-index: 0;
+  height: 100px;
   width: 100px;
-  position: relative;  
+  position: relative;
 }
 
-.circular .inner{
+.circular .inner {
   position: absolute;
   z-index: 6;
   top: 50%;
@@ -91,18 +91,18 @@ html, body{
   border-radius: 100%;
 }
 
-.circular .number{
+.circular .number {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index:10;
-  font-size:18px;
-  font-weight:500;
-  color:#4158d0;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4158d0;
 }
 
-.circular .bar{
+.circular .bar {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -111,7 +111,7 @@ html, body{
   clip: rect(0px, 100px, 100px, 50px);
 }
 
-.circle .bar .progress{
+.circle .bar .progress {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -121,26 +121,25 @@ html, body{
 }
 
 /* Animation Pie */
-.circle .left .progress{
-  z-index:1;
+.circle .left .progress {
+  z-index: 1;
   animation: left 4s linear both;
 }
-@keyframes left{
-  100%{
+@keyframes left {
+  100% {
     transform: rotate(180deg);
   }
 }
 .circle .right {
   transform: rotate(180deg);
-  z-index:3;
- 
+  z-index: 3;
 }
-.circle .right .progress{
+.circle .right .progress {
   animation: right 4s linear both;
-  animation-delay:4s;
+  animation-delay: 4s;
 }
-@keyframes right{
-  100%{
+@keyframes right {
+  100% {
     transform: rotate(180deg);
   }
 }
@@ -193,16 +192,12 @@ html, body{
   text-decoration: none;
 }
 
-.budget-form{
+.budget-form {
   margin: auto;
   padding: 10px;
-
 }
 
-.pure-control-group{
+.pure-control-group {
   padding: 10px;
   margin: auto;
-  
 }
-
-

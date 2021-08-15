@@ -63,7 +63,7 @@ hr {
 }
 
 .container {
-  max-width: 414px;
+  max-width: 100vw;
   /* max-width: 100%; */
   position: relative;
   margin: 0 auto;

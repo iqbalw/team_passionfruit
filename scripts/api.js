@@ -3,20 +3,6 @@ const TRADE_ME_CONFIG = {
   secret: "A6771E4ED0E2AFE011850462E45196D8"
 };
 
-/*
-regionIds = {
-  9 = "Northland",
-  1 = "Auckland",
-  2 = "Bay of Plenty",
-  14 = "Waikato",
-  12 = "Taranaki",
-  15 = "Wellington",
-  3 = "Canterbury",
-  10 = "Otago",
-  11 = "Southland"
-}
-*/
-
 const median = (values) => {
   if(values.length ===0) return 0;
 
@@ -53,23 +39,21 @@ const fetchData = async (region) => {
 
   const data = await response.json();
 
-  //DEBUG
-  // console.log(data);
-
   return data.List;
 };
 
 const getMedianPrice = async () => {
 
-  // let region = document.getElementById("select").value;
+  let region = document.getElementById("region-select").value;
   const regionData = await fetchData(15);
 
   const property = regionData[1];
   const askingPrice = property.PriceDisplay.substr(15);
   const price = parseFloat(askingPrice.replace(/,/g, ''));
 
-  return price;
+  console.log(price);
+  document.getElementById("goal-price").innerHTML = price;
 }
 
 //DEBUG
-getMedianPrice();
+// getMedianPrice();

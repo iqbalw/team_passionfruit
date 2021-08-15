@@ -48,11 +48,10 @@ const getMedianPrice = async () => {
   const regionData = await fetchData(15);
 
   const property = regionData[1];
-  const askingPrice = property.PriceDisplay.substr(15);
-  const price = parseFloat(askingPrice.replace(/,/g, ''));
+  const askingPrice = property.PriceDisplay.substr(14);
 
-  console.log(price);
-  document.getElementById("goal-price").innerHTML = price;
+  console.log(askingPrice);
+  document.getElementById("goal-price").innerHTML = "Median House Price: " + askingPrice;
 }
 
 //DEBUG

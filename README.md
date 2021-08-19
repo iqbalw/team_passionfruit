@@ -7,6 +7,9 @@ A key feature of our app is the use of the TradeMe API to find the median house 
 - ability to add multiple goals
 - authentication and security features
 
-Wireframe designs can be found [here](https://www.figma.com/proto/UHmSpAuuPpbrzahPZ7lqHT/Create-Camp-2021?node-id=1%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A7&show-proto-sidebar=1).
-
 Team Passionfruit created this app during Summer of Tech's Create Camp 2021 (and we had an awesome time doing it!).
+
+Wireframe designs can be found [here](https://www.figma.com/proto/UHmSpAuuPpbrzahPZ7lqHT/Create-Camp-2021?node-id=1%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A7&show-proto-sidebar=1) and a demo of the wireframe is below.
+
+![PassionSave](https://user-images.githubusercontent.com/61821022/130025406-a5e10450-8543-46d3-8ee0-f168773c501d.gif)
+

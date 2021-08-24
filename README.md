@@ -1,5 +1,10 @@
 # Team Passionfruit (Create Camp 2021)
 
+### Note:
+My commits on this repo were made using `iqbalw` and `waniswan1`.
+
+---
+
 Our web-app, **PassionSave**, is a goal-oriented expense tracker for young adults. The basic idea behind this app is to provide a platform for young adults to visually track their expenses and savings with the ultimate goal of saving for their first home deposit.
 
 A key feature of our app is the use of the TradeMe API to find the median house price for a selected region. We then calculate 20% of this median value to get how much a 20% deposit would be and then provide users with the option of setting this as their primary goal. Future versions of the app will include:

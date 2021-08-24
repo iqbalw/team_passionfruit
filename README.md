@@ -1,4 +1,4 @@
-# team_passionfruit
+# Team Passionfruit (Create Camp 2021)
 
 Our web-app, **PassionSave**, is a goal-oriented expense tracker for young adults. The basic idea behind this app is to provide a platform for young adults to visually track their expenses and savings with the ultimate goal of saving for their first home deposit.
 
